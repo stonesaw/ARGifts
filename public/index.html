@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">        
+        <title>WebAR Demo</title>
+        
+        <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+        <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+    </head>
+
+    <body style="margin : 0px; overflow: hidden;">
+        <a-scene embedded arjs="sourceType: webcam;">
+            <a-box position="0 0.5 0" material="opacity: 0.5;"></a-box>
+            <a-marker-camera preset="hiro"></a-marker-camera>
+        </a-scene>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="/__/firebase/7.17.2/firebase-app.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="/__/firebase/7.17.2/firebase-analytics.js"></script>
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/init.js"></script>
+    </body>
+</html>
